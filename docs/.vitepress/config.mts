@@ -22,7 +22,7 @@ export default({
   ],
   base: '/playstation-linux-tutorial/',
   title: 'PlayStation Linux Guide',
-  description: 'Linux installation guides for PS4 and PS5 systems',
+  description: 'Linux installation guide for PS4',
 
 head: [
     ['script', { src: '/playstation-linux-tutorial/turbo.min.js', async: true }],
@@ -38,8 +38,7 @@ cleanUrls:true,
     outline: false,
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Playstation 4 Guide', link: '/ps4/information' },
-      { text: 'Playstation 5 Guide', link: '/ps5/information' },
+      { text: 'Playstation 4 Guide', link: '/ps4/information' }
     ],
 sidebar: {
       '/ps4/': [
@@ -79,55 +78,6 @@ sidebar: {
         },
       ],
 
-      '/ps5/': [
-        {
-          text: 'PS5 Linux Guide',
-          items: [
-            { text: 'Information', link: '/ps5/information' },
-            { text: 'Setup', link: '/ps5/setup' },
-          ]
-        },
-        {
-          text: 'Installation',
-          collapsed: false,
-          items: [
-            { text: 'Internal Install', link: '/ps5/internal-installation' },
-            { text: 'External Install', link: '/ps5/external-installation' },
-            { text: 'Post-Installation', link: '/ps5/post-install' },
-            { text: 'Finishing up', link: '/ps5/ending' }
-          ]
-        },
-        {
-          text: 'Compatibility & Hardware',
-          collapsed: false,
-          items: [
-            { text: 'Monitors', link: '/ps5/monitors' },
-            { text: 'Capture Cards', link: '/ps5/capture-cards' },
-            { text: 'M.2 SSDs', link: '/ps5/m2-ssds' },
-            { text: 'Other Hardware', link: '/ps5/other-hardware' },
-            { text: 'Drivers', link: '/ps5/drivers' }
-          ]
-        },
-        {
-          text: 'Knowledge Base',
-          collapsed: false,
-          items: [
-            { text: 'FAQ', link: '/ps5/faq' },
-            { text: 'Known Limitations', link: '/ps5/limitations' }
-          ]
-        },
-        {
-          text: 'Gaming & Performance',
-          collapsed: false,
-          items: [
-            { text: 'Emulation Guide', link: '/ps5/emulation' },
-            { text: 'Performance Tweaks', link: '/ps5/performance' },
-            { text: 'Benchmark', link: '/ps5/benchmark' }
-          ]
-        }
-      ]
-    },
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/Zfentom/playstation-linux-tutorial/' },
     ],
@@ -136,4 +86,4 @@ sidebar: {
       copyright: 'Copyright © 2026 Zfentom'
     }
   }
-})
+}})
